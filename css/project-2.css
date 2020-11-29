@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#preloader-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #000;
+}
+
+.preloader {
+    width: 100px;
+    height: 100px;
+    background: red;
+    animation: animate-preloader 0.5s infinite ease-in forwards;
+}
+
+@keyframes animate-preloader {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+        background: blue;
+        border-radius: 50%;
+    }
+}
